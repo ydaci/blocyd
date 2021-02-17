@@ -1,2 +1,2 @@
-# blocyd
+# bloc
 Le blog de Yanalist
