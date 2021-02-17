@@ -1,2 +1,2 @@
-# bloc
+# blog
 Le blog de Yanalist
