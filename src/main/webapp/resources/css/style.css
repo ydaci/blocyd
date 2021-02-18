@@ -1,0 +1,86 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+div.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+body{
+  background: black;
+}
+
+.info {
+  color: white;
+  font:1em/1 sans-serif;
+  text-align: center;
+}
+
+.info a{
+  color: white;
+}
+
+svg{
+  width: 600px;
+  height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background: black;
+}
+    
+button {
+color: #1D9AF2;
+background-color: #292D3E;
+border: 1px solid #1D9AF2;
+border-radius: 4px;
+padding: 0 15px;
+cursor: pointer;
+height:32px;
+font-size:14px;
+transition: all 0.2s ease-in-out;
+}
+button:hover {
+animation: swing 1s ease;
+animation-iteration-count: 1;
+}
+@keyframes swing {
+15% {
+transform: translateX(5px);
+}
+30% {
+transform: translateX(-5px);
+}
+50% {
+transform: translateX(3px);
+}
+65% {
+transform: translateX(-3px);
+}
+80% {
+transform: translateX(2px);
+}
+100% {
+transform: translateX(0);
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
